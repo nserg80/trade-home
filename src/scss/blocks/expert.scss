@@ -1,10 +1,11 @@
 .expert {
    position: relative;
+   @include adaptiveValue("padding-top", 100, 50);
    @include adaptiveValue("padding-bottom", 124, 60);
    &__decor {
       left: 50%;
       top: 0;
-      transform: translate(-50%, -40%);
+      transform: translate(-55%, -30%);
       @media (max-width: $tablet) {
          width: 100%;
       }
@@ -150,12 +151,12 @@
    }
    &:nth-child(odd) {
       .item-expert__number {
-         color: #f73e5d;
+         color: #FCD535;
       }
    }
    &:nth-child(even) {
       .item-expert__number {
-         color: #298be7;
+         color: #FEF6D8;
       }
    }
    &:nth-child(2),

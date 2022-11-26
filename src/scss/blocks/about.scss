@@ -1,7 +1,8 @@
 .about {
    @include adaptiveValue("padding-top", 140, 65);
    position: relative;
-   @include adaptiveValue("padding-bottom", 230, 65);
+   @include adaptiveValue("padding-bottom", 115, 65);
+   background: #162635;
    &__decor1 {
       top: 0;
       left: 0;

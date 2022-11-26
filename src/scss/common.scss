@@ -56,7 +56,7 @@
          }
       }
    }
-   // .header-button_rose
+
    &_secondary {
       background: #080b0e;
       border: 1px solid #FCD535;;
@@ -81,6 +81,24 @@
          &:hover {
             box-shadow: 5px 5px 20px rgba(247, 185, 62, 0.6);
             background: linear-gradient(154.26deg, #FCD535 16.27%, rgba(252, 213, 53, 0) 154.75%);
+         }
+      }
+   }
+
+   &_shadow-primary {
+      height: rem(55);
+      font-size: rem(18);
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(154.26deg, #FCD535 16.27%, rgba(252, 213, 53, 0) 154.75%);
+      box-shadow: 5px 5px 55px rgba(247, 185, 62, 0.6);
+      border-radius: 900px;
+      @media (max-width: $tablet) {
+         height: rem(41);
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            box-shadow: 5px 5px 20px rgba(247, 185, 62, 0.6);
          }
       }
    }

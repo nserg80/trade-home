@@ -1,6 +1,7 @@
 .currency {
-    padding: 12px 0;
-    background: rgba(0,0,0, 0.2);
+    padding: 17px 0;
+    background: rgba(255,255,255, 0.08);
+    backdrop-filter: blur(5.5px);
     margin: -32px 0;
     position: relative;
     z-index: 1;
@@ -14,8 +15,8 @@
     &__item {
         display: flex;
         align-items: center;
-        border-right: 1px solid #777;
-        padding: 0 10px;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0 20px;
         flex-shrink: 0;
 
         &:last-child {
@@ -24,15 +25,16 @@
     }
 
     &__ico {
-        margin-right: 5px;
+        margin-right: 10px;
     }
 
     &__title {
         color: #fff;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
     }
 
     &__value {
+        font-size: 18px;
         color: #FCD535;
     }
 }

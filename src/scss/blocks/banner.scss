@@ -33,8 +33,8 @@
    }
    // .banner__content
    &__content {
-      max-width: rem(540);
-      flex: 0 0 percent(540, 1120);
+      max-width: rem(695);
+      flex: 0 0 percent(695, 1120);
       padding-top: rem(50);
       @media (max-width: $tablet) {
          flex: 1 1 auto;
@@ -253,24 +253,7 @@
    }
    // .form-banner__button
    &__button {
-      background: linear-gradient(154.26deg, #f73e5d 16.27%, rgba(247, 62, 93, 0) 154.75%), #080b0e;
       display: flex;
-      height: rem(55);
-      align-items: center;
-      justify-content: center;
-      box-shadow: 5px 5px 55px rgba(247, 62, 93, 0.6);
-      border-radius: 900px;
-      font-size: rem(18);
       width: 100%;
-      color: #fff;
-      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
-      @media (max-width: $tablet) {
-         height: rem(41);
-      }
-      @media (any-hover: hover) {
-         &:hover {
-            box-shadow: 5px 5px 25px rgba(247, 62, 93, 0.6);
-         }
-      }
    }
 }
