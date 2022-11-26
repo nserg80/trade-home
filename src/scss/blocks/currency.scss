@@ -2,6 +2,8 @@
     padding: 12px 0;
     background: rgba(0,0,0, 0.2);
     margin: -32px 0;
+    position: relative;
+    z-index: 1;
     overflow: hidden;
 
     &__list {
@@ -14,6 +16,7 @@
         align-items: center;
         border-right: 1px solid #777;
         padding: 0 10px;
+        flex-shrink: 0;
 
         &:last-child {
             border: none;
