@@ -1,0 +1,45 @@
+.lang-switcher {
+    position: relative;
+    flex-shrink: 0;
+
+    @media (max-width: 600px) {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+ 
+    &__opener {
+       display: flex;
+       align-items: center;
+       cursor: pointer;
+    }
+ 
+    &__current {
+       margin-right: 4px;
+    }
+ 
+    &.active &__arrow {
+       transform: rotate(180deg);
+    }
+ 
+    &__list {
+       display: none;
+       position: absolute;
+       top: 100%;
+       left: 0;
+       padding-top: 4px;
+    }
+ 
+    &.active &__list {
+       display: block;
+    }
+ 
+    &__item {
+       padding: 4px 0;
+       cursor: pointer;
+ 
+       &:hover {
+          color: #fff;
+       }
+    }
+ }

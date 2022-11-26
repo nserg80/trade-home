@@ -155,7 +155,7 @@ body::after {
             left: 22px;
             bottom: 5px;
             width: 1px;
-            background-color: #f73e5d;
+            background-color: #CDAE2E;
             @media (max-width: em(600)) {
                display: none;
             }
@@ -171,7 +171,7 @@ body::after {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(154.26deg, #f73e5d 16.27%, rgba(247, 62, 93, 0) 154.75%), #0a1a28;
+      background: linear-gradient(154.26deg, #CDAE2E 16.27%, #867823 154.75%), #0A1A28;
       font-weight: bold;
       font-size: rem(24);
       color: #fff;
@@ -299,6 +299,7 @@ body::after {
       }
    }
    &__mobile-image {
+      text-align: center;
       @media (min-width: em(600)) {
          display: none;
       }
@@ -308,7 +309,7 @@ body::after {
       padding: rem(6);
       border-radius: 50%;
       display: inline-block;
-      border: 1px solid #f73e5d;
+      border: 1px solid #CDAE2E;
       span {
          font-weight: bold;
          font-size: 24px;
@@ -320,7 +321,7 @@ body::after {
          align-items: center;
          justify-content: center;
          border-radius: 50%;
-         background: linear-gradient(154.26deg, #f73e5d 16.27%, rgba(247, 62, 93, 0) 154.75%), #0a1a28;
+         background: linear-gradient(154.26deg, #CDAE2E 16.27%, #867823 154.75%), #0A1A28;
       }
       &:not(:last-child) {
          margin-bottom: rem(8);
