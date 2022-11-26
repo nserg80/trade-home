@@ -59,7 +59,8 @@
 
    &_secondary {
       background: #080b0e;
-      border: 1px solid #FCD535;;
+      border: 1px solid #FCD535;
+      color: #FBD435;
       @media (any-hover: hover) {
          &:hover {
             box-shadow: 0 0 5px #FCD535;
