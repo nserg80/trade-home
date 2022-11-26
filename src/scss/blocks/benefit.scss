@@ -1,4 +1,5 @@
 .benefit {
+   @include adaptiveValue("padding-top", 108, 40);
    @include adaptiveValue("padding-bottom", 108, 40);
    @media (max-width: $tablet) {
       padding-top: rem(72);

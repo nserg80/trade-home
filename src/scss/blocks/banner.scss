@@ -1,7 +1,7 @@
 .banner {
    @include adaptiveValue("padding-bottom", 73, 54);
    padding-top: rem(180);
-   background: url("@img/about/bg.png") 0 0 / cover no-repeat;
+   background: url("@img/about/bg.jpg") 0 0 / cover no-repeat;
    // .banner__container
    &__container {
       position: relative;
@@ -14,6 +14,10 @@
          height: 384px;
          transform: translate(-50%, -20px);
          background: url("@img/about/02.png") 0 0 / cover no-repeat;
+
+         @media (max-width: $tablet) {
+            display: none;
+         }
       }
    }
    // .banner__row

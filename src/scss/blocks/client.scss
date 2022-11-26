@@ -1,7 +1,14 @@
 .client {
    position: relative;
-   @include adaptiveValue("padding-bottom", 108, 40);
+   background: #162635;
+   @include adaptiveValue("padding-top", 90, 30);
+   @include adaptiveValue("padding-bottom", 120, 50);
    // .client__container
+
+   .decor {
+      z-index: 0;
+   }
+
    &__decor2 {
       top: 0;
       left: 0;
