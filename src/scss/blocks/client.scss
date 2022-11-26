@@ -8,7 +8,7 @@
    }
    &__decor3 {
       right: 0;
-      top: 20%;
+      top: 40%;
    }
    &__container {
    }
@@ -128,7 +128,7 @@
    // .client__position
    &__position {
       line-height: math.div(19, 16);
-      color: #298be7;
+      color: #FBD539;
       &:not(:last-child) {
          margin-bottom: rem(9);
       }
