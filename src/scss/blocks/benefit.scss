@@ -263,4 +263,12 @@
          width: 120%;
       }
    }
+
+   &__image-shift {
+      margin-left: -95px;
+
+      @media (max-width: $tablet){
+         margin-left: 0;
+      }
+   }
 }

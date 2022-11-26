@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -105,12 +105,12 @@ function initSliders() {
 		});
 	}
 
-	if (document.querySelector('.client__slider')) { // Указываем скласс нужного слайдера
+	if (document.querySelector('.old-currency-slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.currency-slider', { // Указываем скласс нужного слайдера
+		new Swiper('.old-currency-slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation,Pagination],
+			modules: [Autoplay],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 10,
@@ -119,14 +119,13 @@ function initSliders() {
          	loop:true,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
 			//preloadImages: false,
 			//lazy: true,
 
 			// Эффекты
 			// effect: 'fade',
 			autoplay: {
-				delay: 1000,
+				delay: 0,
 				disableOnInteraction: false,
 			},
 

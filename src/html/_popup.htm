@@ -52,7 +52,7 @@
       </div>
    </div>
 </div>
-</div>
+
 <div id="popup2" aria-hidden="true" class="popup popup_main">
    <div class="popup__wrapper">
       <div class="popup__content">
@@ -110,6 +110,153 @@
             </div>
          </div>
 
+      </div>
+   </div>
+</div>
+
+<div id="popup3" aria-hidden="true" class="popup popup_main">
+   <div class="popup__wrapper">
+      <div class="popup__content">
+         <button data-close type="button" class="popup__close"><img src="@img/popup/close.svg" alt="Close"></button>
+         <div class="popup__title">
+            Инвестиционная статистика
+         </div>
+         <div class="popup__row">
+            <ul class="invest-stats">
+               <li class="invest-stats__item">
+                  <img src="@img/popup/invest-stats1.svg" alt="Image">
+                  <strong class="invest-stats__title">NaN0</strong>
+                  Депозиты
+               </li>
+               <li class="invest-stats__item">
+                  <img src="@img/popup/invest-stats2.svg" alt="Image">
+                  <strong class="invest-stats__title">1471309</strong>
+                  Снятие средств
+               </li>
+               <li class="invest-stats__item">
+                  <img src="@img/popup/invest-stats3.svg" alt="Image">
+                  <strong class="invest-stats__title">4140</strong>
+                  Инвесторы
+               </li>
+               <li class="invest-stats__item">
+                  <img src="@img/popup/invest-stats4.svg" alt="Image">
+                  <strong class="invest-stats__title">45</strong>
+                  Страховой фонд
+               </li>
+               <li class="invest-stats__item">
+                  <img src="@img/popup/invest-stats5.svg" alt="Image">
+                  <strong class="invest-stats__title">87 651</strong>
+                  Проектные работы
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div id="popup4" aria-hidden="true" class="popup popup_calc">
+   <div class="popup__wrapper">
+      <div class="popup__content">
+         <button data-close type="button" class="popup__close"><img src="@img/popup/close.svg" alt="Close"></button>
+         <form action="#" class="banner__form form-banner">
+            <div class="form-banner__top">
+               <div class="form-banner__top-content">
+                  <div class="form-banner__title">
+                     Сумма инвестирования
+                  </div>
+                  <div data-from="150" data-to="10000" data-start="200" id="range"
+                     class="form-banner__range"></div>
+                  <div class="form-banner__range-value">
+                     10
+                  </div>
+               </div>
+            </div>
+            <div class="form-banner__bottom">
+               <div class="form-banner__block">
+                  <div class="form-banner__row">
+                     <div class="form-banner__title">
+                        Расчет прибыли
+                     </div>
+                     <div class="form-banner__valute">
+                        Валюта 
+                        <div class="currency-selector">
+                           <div class="currency-selector__opener">
+                              <span class="currency-selector__current">$</span>
+                              <img class="currency-selector__arrow" src="@img/about/arrow-down.svg" alt="arrow-down">
+                           </div>
+                           <ul class="currency-selector__list">
+                              <li class="currency-selector__item">€</li>
+                              <li class="currency-selector__item">₴</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-banner__checkboxes">
+                     <div class="checkbox form-banner__checkbox">
+                        <input id="c_1" data-error="Ошибка" checked class="checkbox__input" type="radio"
+                           value="1" name="form[]">
+                        <label for="c_1" class="checkbox__label">1
+                           мес</label>
+                     </div>
+                     <div class="checkbox form-banner__checkbox">
+                        <input id="c_3" data-error="Ошибка" checked class="checkbox__input" type="radio"
+                           value="1" name="form[]">
+                        <label for="c_3" class="checkbox__label">3
+                           мес</label>
+                     </div>
+                     <div class="checkbox form-banner__checkbox">
+                        <input id="c_6" data-error="Ошибка" class="checkbox__input" type="radio" value="1"
+                           name="form[]">
+                        <label for="c_6" class="checkbox__label">6
+                           мес</label>
+                     </div>
+                     <div class="checkbox form-banner__checkbox">
+                        <input id="c_12" data-error="Ошибка" class="checkbox__input" type="radio" value="1"
+                           name="form[]">
+                        <label for="c_12" class="checkbox__label">12
+                           мес</label>
+                     </div>
+                  </div>
+                  <div class="form-banner__checkboxes form-banner__checkboxes2">
+                     <div class="checkbox form-banner__checkbox">
+                        <input id="c2_5" data-error="Ошибка" checked class="checkbox__input" type="radio"
+                           value="1" name="form2">
+                        <label for="c2_5" class="checkbox__label">5 %</label>
+                     </div>
+                     <div class="checkbox form-banner__checkbox">
+                        <input id="c2_6" data-error="Ошибка" class="checkbox__input" type="radio" value="1"
+                           name="form2">
+                        <label for="c2_6" class="checkbox__label">6 %</label>
+                     </div>
+                     <div class="checkbox form-banner__checkbox">
+                        <input id="c2_7" data-error="Ошибка" class="checkbox__input" type="radio" value="1"
+                           name="form2">
+                        <label for="c2_7" class="checkbox__label">7 %</label>
+                     </div>
+                     <div class="checkbox form-banner__checkbox">
+                        <input id="c2_8" data-error="Ошибка" class="checkbox__input" type="radio" value="1"
+                           name="form2">
+                        <label for="c2_8" class="checkbox__label">8 %</label>
+                     </div>
+                     <div class="checkbox form-banner__checkbox">
+                        <input id="c2_10" data-error="Ошибка" class="checkbox__input" type="radio" value="1"
+                           name="form2">
+                        <label for="c2_10" class="checkbox__label">10 %</label>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-banner__summa">
+                  +80 $
+               </div>
+               <div class="form-banner__info">
+                  Вывести прибыль можно через 24 часа
+               </div>
+               <button class="form-banner__button button button_shadow-primary">Начать инвестировать</button>
+            </div>
+         </form>
+         <div class="banner__kurs">
+            1$ = 233488 ₽
+         </div>
       </div>
    </div>
 </div>

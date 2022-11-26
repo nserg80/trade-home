@@ -9,7 +9,7 @@ document.addEventListener("watcherCallback", function (e) {
 	const entry = e.detail.entry;
 	// Наблюдаемый объект
 	const targetElement = entry.target;
-   const toTop2=document.querySelector('.footer__to-top');
+   const toTop2=document.querySelector('.back-to-top');
    if(toTop2){
       targetElement.classList.contains('footer._watcher-view') ? toTop2.classList.add('fixed'):toTop2.classList.remove('fixed');
    }

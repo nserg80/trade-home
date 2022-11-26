@@ -77,7 +77,7 @@ export function headerScroll() {
 	const startPoint = header.dataset.scroll ? header.dataset.scroll : 1;
 	let scrollDirection = 0;
 	let timer;
-   const toTop=document.querySelector('.footer__to-top')
+   const toTop=document.querySelector('.back-to-top')
 	document.addEventListener("windowScroll", function (e) {
 		const scrollTop = window.scrollY;
 		clearTimeout(timer);

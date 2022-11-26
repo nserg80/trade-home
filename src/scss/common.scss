@@ -126,3 +126,29 @@
       }
    }
 }
+
+.back-to-top {
+   display: none;
+   position: fixed;
+   bottom: 85px;
+   right: 30px;
+   height: rem(80);
+   width: rem(80);
+   @media (max-width: $mobile) {
+      width: rem(50);
+      height: rem(50);
+   }
+   &.scroll {
+      display: block;
+      z-index: 5;
+      top: unset;
+      transform: none;
+      @media (max-width: $mobile) {
+         right: 3px;
+      }
+   }
+   img {
+      animation: pulsate 1.2s infinite;
+      border-radius: 50%;
+   }
+}

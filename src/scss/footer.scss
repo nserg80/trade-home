@@ -1,26 +1,13 @@
 //====================================================================================================
 .footer {
+   padding-bottom: 83px;
    // .footer__top
    &__top {
       @include adaptiveValue("padding-top", 50, 30);
       @include adaptiveValue("padding-bottom", 50, 30);
       background: #0c2234;
    }
-   &._watcher-view {
-      .footer__to-top {
-         position: absolute;
-         right: -100px;
-         top: 0;
-         transform: translate(100%, -100%);
 
-         @media (max-width: em(1500)) {
-            right: 0;
-         }
-         @media (max-width: em(1300)) {
-            transform: translate(0%, -100%);
-         }
-      }
-   }
    // .footer__container
    &__container {
    }
@@ -35,31 +22,6 @@
       }
       @media (max-width: $mobileSmall) {
          gap: rem(15);
-      }
-   }
-   &__to-top {
-      display: block;
-      height: rem(80);
-      width: rem(80);
-      @media (max-width: $mobile) {
-         width: rem(50);
-         height: rem(50);
-      }
-      &.scroll {
-         position: fixed;
-         bottom: 50px;
-         right: 50px;
-         z-index: 5;
-         top: unset;
-         transform: none;
-         @media (max-width: $mobile) {
-            right: rem(20);
-            bottom: rem(20);
-         }
-      }
-      img {
-         animation: pulsate 1.2s infinite;
-         border-radius: 50%;
       }
    }
    // .footer__logo

@@ -3,14 +3,7 @@
    position: relative;
    @include adaptiveValue("padding-bottom", 115, 65);
    background: #162635;
-   // &__decor1 {
-   //    top: 0;
-   //    left: 0;
-   // }
-   // &__decor2 {
-   //    bottom: -35%;
-   //    right: 0;
-   // }
+
    // .about__container
    &__container {
       max-width: rem(1630);

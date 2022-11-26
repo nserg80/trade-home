@@ -2,17 +2,22 @@
     padding: 17px 0;
     background: rgba(255,255,255, 0.08);
     backdrop-filter: blur(5.5px);
-    margin: -32px 0;
-    position: relative;
+    // margin: -32px 0; - old style
+    position: fixed;
+    bottom: 0;
     z-index: 1;
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
 
     &__list {
         display: flex;
         align-items: center;
+        position: relative;
     }
 
     &__item {
+        width: 175px;
         display: flex;
         align-items: center;
         border-right: 1px solid rgba(255, 255, 255, 0.1);
