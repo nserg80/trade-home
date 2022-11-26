@@ -1,0 +1,35 @@
+.currency {
+    padding: 12px 0;
+    background: rgba(0,0,0, 0.2);
+    margin: -32px 0;
+    overflow: hidden;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid #777;
+        padding: 0 10px;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    &__ico {
+        margin-right: 5px;
+    }
+
+    &__title {
+        color: #fff;
+        margin-bottom: 5px;
+    }
+
+    &__value {
+        color: #FCD535;
+    }
+}

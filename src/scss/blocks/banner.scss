@@ -4,12 +4,25 @@
    background: url("@img/about/bg.png") 0 0 / cover no-repeat;
    // .banner__container
    &__container {
+      position: relative;
+      &::after {
+         content: '';
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         width: 413px;
+         height: 384px;
+         transform: translate(-50%, -20px);
+         background: url("@img/about/02.png") 0 0 / cover no-repeat;
+      }
    }
    // .banner__row
    &__row {
       display: flex;
       justify-content: space-between;
       gap: rem(20);
+      position: relative;
+      z-index: 2;
       @media (max-width: $tablet) {
          align-items: center;
       }
