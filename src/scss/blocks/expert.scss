@@ -1,0 +1,289 @@
+.expert {
+   position: relative;
+   @include adaptiveValue("padding-bottom", 124, 60);
+   &__decor {
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -40%);
+      @media (max-width: $tablet) {
+         width: 100%;
+      }
+      @media (max-width: em(550)) {
+         width: 140%;
+      }
+   }
+   // .expert__container
+   &__container {
+      max-width: rem(1335);
+   }
+   // .expert__top
+   &__top {
+      max-width: rem(760);
+      margin: 0 auto;
+      text-align: center;
+      line-height: math.div(20, 16);
+      @media (max-width: $tablet) {
+         max-width: rem(613);
+         &:not(:last-child) {
+            margin-bottom: rem(91);
+         }
+      }
+      @media (max-width: em(550)) {
+         &:not(:last-child) {
+            margin-bottom: rem(25);
+         }
+      }
+   }
+   // .expert__title
+   &__title {
+      text-transform: uppercase;
+      &:not(:last-child) {
+         margin-bottom: rem(17);
+         @media (max-width: em(550)) {
+            margin-bottom: rem(7);
+         }
+      }
+   }
+   // .expert__text
+   &__text {
+      @media (max-width: $tablet) {
+         br {
+            display: none;
+         }
+      }
+      @media (max-width: em(550)) {
+         font-size: rem(14);
+      }
+   }
+   // .expert__grid-layout
+   &__grid-layout {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      gap: rem(25);
+      flex-wrap: wrap;
+      @media (max-width: $tablet) {
+         gap: rem(70) rem(25);
+      }
+   }
+   // .expert__line1
+   &__line1 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 70px;
+      width: 80%;
+      @media (max-width: $tablet) {
+         display: none;
+      }
+      img {
+         width: 100%;
+      }
+   }
+   &__line2 {
+      position: absolute;
+      left: 49.5%;
+      transform: translateX(-50%);
+      top: 20px;
+      width: 60%;
+      @media (min-width: $tablet) {
+         display: none;
+      }
+      @media (max-width: em(550)) {
+         display: none;
+      }
+      img {
+         width: 100%;
+      }
+   }
+   &__line3 {
+      position: absolute;
+      left: 49.5%;
+      transform: translateX(-50%);
+      bottom: 20%;
+      width: 60%;
+      @media (min-width: $tablet) {
+         display: none;
+      }
+      @media (max-width: em(650)) {
+         bottom: 25%;
+      }
+      @media (max-width: em(550)) {
+         display: none;
+      }
+      img {
+         width: 100%;
+      }
+   }
+   // .expert__item
+   &__item {
+   }
+   &__grid-wrap {
+      position: relative;
+      margin-top: rem(-80);
+      @media (max-width: em(1200)) {
+         margin-top: rem(50);
+      }
+      @media (max-width: $tablet) {
+         max-width: rem(670);
+         margin: 0 auto;
+      }
+      @media (max-width: em(550)) {
+         max-width: rem(300);
+      }
+   }
+}
+
+.item-expert {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: rem(183);
+   flex: 0 0 calc(16.6% - 25px);
+   @media (max-width: $tablet) {
+      flex: 0 0 calc(33.33% - 25px);
+      max-width: 100%;
+   }
+   @media (max-width: em(550)) {
+      flex: 0 0 calc(50% - 25px);
+      gap: rem(30);
+   }
+   &:nth-child(odd) {
+      .item-expert__number {
+         color: #f73e5d;
+      }
+   }
+   &:nth-child(even) {
+      .item-expert__number {
+         color: #298be7;
+      }
+   }
+   &:nth-child(2),
+   &:nth-child(5) {
+      @media (min-width: $tablet) {
+         padding-top: percent(192, 1335);
+      }
+   }
+   &:nth-child(3),
+   &:nth-child(4) {
+      @media (min-width: $tablet) {
+         padding-top: percent(292, 1335);
+      }
+   }
+   &:nth-child(2),
+   &:nth-child(5) {
+      @media (max-width: $tablet) {
+         padding-top: percent(75, 738);
+      }
+      @media (max-width: em(550)) {
+         padding-top: 0;
+      }
+   }
+   &:nth-child(2n + 1) {
+      @media (max-width: em(550)) {
+         position: relative;
+         &::after {
+            content: "";
+            position: absolute;
+            top: 40px;
+            left: 90%;
+            width: 60%;
+            z-index: -1;
+            height: 40px;
+            background: url("@img/expert/line4.svg") center / contain no-repeat;
+         }
+      }
+   }
+   &__decor {
+      position: absolute;
+      top: -4px;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      max-width: rem(30);
+      @media (max-width: $tablet) {
+         top: rem(-10);
+      }
+      @media (max-width: em(550)) {
+         top: 30px;
+         left: 17px;
+         max-width: rem(22);
+         transform: translate(-100%, -80%);
+      }
+      &_2 {
+         left: 30%;
+         @media (max-width: em(550)) {
+            left: 10px;
+         }
+      }
+      &_6 {
+         left: 60%;
+         @media (max-width: em(550)) {
+            left: 10px;
+         }
+      }
+   }
+   // .item-expert__image
+   &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: rem(152);
+      height: rem(152);
+      position: relative;
+      @media (max-width: em(1200)) {
+         width: 100%;
+      }
+      @media (max-width: $tablet) {
+         max-width: rem(155);
+         width: 100%;
+         height: rem(140);
+      }
+      @media (max-width: em(550)) {
+         max-width: rem(120);
+      }
+   }
+   &__bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      @media (max-width: $tablet) {
+         width: 100%;
+      }
+   }
+   // .item-expert__icon
+   &__icon {
+      width: rem(52);
+      height: rem(52);
+      position: relative;
+      z-index: 2;
+   }
+   // .item-expert__content
+   &__content {
+      margin-top: rem(-10);
+      max-width: rem(183);
+      @media (max-width: $tablet) {
+         margin-top: rem(-10);
+      }
+   }
+   // .item-expert__number
+   &__number {
+      font-weight: bold;
+      font-size: rem(30);
+      line-height: math.div(36, 30);
+
+      &:not(:last-child) {
+         margin-bottom: rem(9);
+      }
+   }
+   // .item-expert__text
+   &__text {
+      font-size: rem(16);
+      line-height: math.div(22, 16);
+      color: #ffffff;
+      @media (max-width: em(550)) {
+         font-size: rem(14);
+      }
+   }
+}

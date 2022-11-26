@@ -1,0 +1,265 @@
+.client {
+   position: relative;
+   @include adaptiveValue("padding-bottom", 108, 40);
+   // .client__container
+   &__decor2 {
+      top: 0;
+      left: 0;
+   }
+   &__decor3 {
+      right: 0;
+      top: 20%;
+   }
+   &__container {
+   }
+   &__bubble {
+      position: absolute;
+      top: 100px;
+      pointer-events: none;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 95%;
+      @media (max-width: em(600)) {
+         display: none;
+      }
+   }
+   // .client__title
+   &__title {
+      max-width: rem(1110);
+      text-align: center;
+      @media (max-width: $tablet) {
+         font-size: rem(25);
+      }
+      @media (max-width: $mobileSmall) {
+         font-size: rem(20);
+      }
+      span {
+         background: #f73e5d;
+         background: -webkit-linear-gradient(to right, #f73e5d 0%, #298be7 100%);
+         background: -moz-linear-gradient(to right, #f73e5d 0%, #298be7 100%);
+         background: linear-gradient(to right, #f73e5d 0%, #298be7 100%);
+         -webkit-background-clip: text;
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+   // .client__descr
+   &__descr {
+      line-height: math.div(22, 16);
+      max-width: rem(920);
+      text-align: center;
+      margin: 0 auto;
+   }
+   &__more-text {
+      &:not(:last-child) {
+         margin-bottom: rem(45);
+      }
+   }
+   &__slider-wrap {
+      position: relative;
+   }
+   // .client__slider
+   &__slider {
+      padding-top: rem(35);
+      margin-top: rem(-35);
+      position: relative;
+   }
+   // .client__decor
+   &__decor {
+   }
+   // .client__wrapper
+   &__wrapper {
+      &:not(:last-child) {
+         margin-bottom: rem(20);
+      }
+   }
+   // .client__slide
+   &__slide {
+   }
+   // .client__image-ibg
+   &__image-ibg {
+      width: rem(140);
+      margin: 0 auto;
+      height: rem(140);
+      @media (max-width: $mobile) {
+         @include adaptiveValue("width", 140, 80);
+         @include adaptiveValue("height", 140, 80);
+      }
+      img {
+         overflow: hidden;
+         border-radius: 50%;
+         filter: drop-shadow(5px 5px 25px rgba(247, 62, 93, 0.6));
+      }
+      &:not(:last-child) {
+         margin-bottom: rem(25);
+      }
+   }
+   // .client__quote
+   &__quote {
+      position: absolute;
+      bottom: 0;
+      right: 15px;
+      width: rem(36);
+      height: rem(35);
+      z-index: 2;
+      @media (max-width: $tablet) {
+         display: none;
+      }
+      img {
+         object-fit: contain;
+      }
+   }
+   // .client__content
+   &__content {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+   }
+   // .client__name
+   &__name {
+      font-weight: bold;
+      line-height: math.div(19, 16);
+      color: #ffffff;
+      &:not(:last-child) {
+         margin-bottom: rem(4);
+      }
+   }
+   // .client__position
+   &__position {
+      line-height: math.div(19, 16);
+      color: #298be7;
+      &:not(:last-child) {
+         margin-bottom: rem(9);
+      }
+   }
+   // .client__text
+   &__text {
+      max-width: rem(600);
+      line-height: math.div(22, 16);
+      margin: 0 auto;
+      color: #fff;
+      @media (max-width: $tablet) {
+         max-width: 57%;
+      }
+      @media (max-width: em(600)) {
+         max-width: 100%;
+      }
+   }
+   // .client__arrows
+   &__arrows {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      position: absolute;
+      max-width: rem(385);
+      @media (max-width: $mobile) {
+         max-width: 39%;
+         top: 17%;
+      }
+      @media (max-width: em(600)) {
+         display: none;
+      }
+   }
+   // .client__arrow
+   &__arrow {
+      width: rem(54);
+      cursor: pointer;
+      border-radius: 50%;
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      height: rem(54);
+      animation: pulsate 1.2s infinite;
+      // .client__arrow_prev
+      &_prev {
+      }
+      // .client__arrow_next
+   }
+   &__pagination {
+      @media (min-width: em(600)) {
+         display: none;
+      }
+   }
+}
+
+.decor-client {
+   position: absolute;
+   top: rem(35);
+   left: 50%;
+   width: 100%;
+   height: 100%;
+   justify-content: space-between;
+   gap: rem(20);
+   display: flex;
+   pointer-events: none;
+   transform: translateX(-50%);
+   flex-direction: column;
+   max-width: rem(1037);
+   @media (max-width: $tablet) {
+      height: 110%;
+   }
+   @media (max-width: em(600)) {
+      top: 14%;
+   }
+   @media (max-width: $mobileSmall) {
+      top: 10%;
+   }
+   // .decor-client__row
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: rem(0) rem(50);
+      // .decor-client__row_center
+      @media (max-width: em(600)) {
+         display: none;
+      }
+      &_center {
+         padding: 0;
+         @media (max-width: em(600)) {
+            display: flex;
+         }
+      }
+   }
+   // .decor-client__image-ibg
+   &__image-ibg {
+      width: rem(80);
+
+      height: rem(80);
+      img {
+         border-radius: 50%;
+         overflow: hidden;
+      }
+   }
+   // .decor-client__image-small-ibg
+   &__image-small-ibg {
+      width: rem(59);
+      height: rem(59);
+      @media (max-width: em(600)) {
+         &::after {
+            content: "";
+            position: absolute;
+            top: -25%;
+            right: -25%;
+            height: rem(16);
+            background: url("@img/client/d1.svg") center / contain no-repeat;
+            width: rem(16);
+         }
+         &:last-child {
+            &::after {
+               content: "";
+               position: absolute;
+               top: -25%;
+               right: unset;
+               left: -25%;
+               height: rem(16);
+               background: url("@img/client/d2.svg") center / contain no-repeat;
+               width: rem(16);
+            }
+         }
+      }
+   }
+}
