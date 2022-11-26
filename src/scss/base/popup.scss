@@ -341,14 +341,3 @@ body::after {
       }
    }
 }
-
-.popup_calc {
-   .popup__content {
-      width: 450px;
-      padding: 0;
-      background: none;
-      @media (max-width: 450px) {
-         width: 100%;
-      }
-   }
-}

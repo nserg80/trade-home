@@ -15,10 +15,6 @@
                      <h1 class="title banner__title">
                         <span>Покупайте, торгуйте</span> <br> и храните более 350 <br> криптовалют на Binance
                      </h1>
-                     <div class="banner__descr">
-                        Полностью независимая и автоматическая работа ваших инвестиций. Просто выберите необходимый
-                        месячный процент прибыли
-                     </div>
                      <a href="" data-popup="#popup3" data-goto=".about" class="button button_shadow banner__button">
                         Подробнее
                      </a>
@@ -31,6 +27,7 @@
                      </svg>
                         
                      <div class="banner__video-wrap">
+                        <a class="banner__video-play" href="#"><img src="@img/about/ico-play.svg" alt="play"></a>
                         <video class="banner__video" width="654" height="auto" loop autoplay muted>
                            <source src="@img/about/video.mp4" type="video/mp4">
                          Your browser does not support the video tag.
@@ -41,107 +38,109 @@
             </div>
          </section>
 
-         <section class="currency currency-slider">
-            <ul class="currency__list">
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-bitcoin-cash-bch.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">BNB</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-cardano_ada.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-bitcoin-cash-bch.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">BNB</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-cardano_ada.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-tetcher.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-ethereum-eth.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-tetcher.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-ethereum-eth.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-tetcher.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-ethereum-eth.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-tetcher.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-ethereum-eth.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-tetcher.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-               <li class=" currency__item">
-                  <img class="currency__ico" src="@img/currency/ico-ethereum-eth.svg" alt="Image">
-                  <div class="currency__desc">
-                     <p class="currency__title">Ada</p>
-                     <strong class="currency__value">$ 274.56</strong>
-                  </div>
-               </li>
-            </ul>
+         <section class="currency-wrap">
+            <div class="currency currency-slider">
+               <ul class="currency__list">
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-bitcoin-cash-bch.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">BNB</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-cardano_ada.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-bitcoin-cash-bch.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">BNB</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-cardano_ada.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-tetcher.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-ethereum-eth.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-tetcher.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-ethereum-eth.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-tetcher.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-ethereum-eth.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-tetcher.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-ethereum-eth.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-tetcher.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+                  <li class="currency__item">
+                     <img class="currency__ico" src="@img/currency/ico-ethereum-eth.svg" alt="Image">
+                     <div class="currency__desc">
+                        <p class="currency__title">Ada</p>
+                        <strong class="currency__value">$ 274.56</strong>
+                     </div>
+                  </li>
+               </ul>
+            </div>
          </section>
 
          <section class="about">
@@ -471,7 +470,7 @@
                <div class="client__slider-wrap">
                   <div class="client__slider swiper">
                      <div class="client__wrapper swiper-wrapper">
-                        <div class="client__slide">
+                        <div class="client__slide swiper-slide">
                            <div class="client__image-ibg">
                               <div class="client__quote">
                                  <img src="@img/client/quote.svg" alt="Qoute">
@@ -493,7 +492,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="client__slide">
+                        <div class="client__slide swiper-slide">
                            <div class="client__image-ibg">
                               <div class="client__quote">
                                  <img src="@img/client/quote.svg" alt="Qoute">
@@ -515,7 +514,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="client__slide">
+                        <div class="client__slide swiper-slide">
                            <div class="client__image-ibg">
                               <div class="client__quote">
                                  <img src="@img/client/quote.svg" alt="Qoute">
@@ -589,7 +588,7 @@
                </h2>
                <div class="benefit__slider swiper">
                   <div class="benefit__wrapper swiper-wrapper">
-                     <div class="benefit__slide">
+                     <div class="benefit__slide swiper-slide">
                         <div class="benefit__item item-benefit">
                            <div class="item-benefit__icon">
                               <img src="@img/benefit/01.svg" alt="Icon">
@@ -611,7 +610,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="benefit__slide">
+                     <div class="benefit__slide swiper-slide">
                         <div class="benefit__item item-benefit">
                            <div class="item-benefit__icon">
                               <img src="@img/benefit/02.svg" alt="Icon">
@@ -632,7 +631,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="benefit__slide">
+                     <div class="benefit__slide swiper-slide">
                         <div class="benefit__item item-benefit">
                            <div class="item-benefit__icon">
                               <img src="@img/benefit/03.svg" alt="Icon">
@@ -654,7 +653,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="benefit__slide">
+                     <div class="benefit__slide swiper-slide">
                         <div class="benefit__item item-benefit">
                            <div class="item-benefit__icon">
                               <img src="@img/benefit/04.svg" alt="Icon">
@@ -738,6 +737,7 @@
    </div>
    @@include('html/_popup.htm',{})
    @@include('html/_js.htm',{})
+
 </body>
 
 </html>

@@ -1,6 +1,5 @@
 //====================================================================================================
 .footer {
-   padding-bottom: 83px;
    // .footer__top
    &__top {
       @include adaptiveValue("padding-top", 50, 30);

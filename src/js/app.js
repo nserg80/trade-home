@@ -192,7 +192,10 @@ import * as flsScroll from "./files/scroll/scroll.js";
 /* Подключаем файлы со своим кодом */
 import "./files/langSwitcher.js";
 import "./files/currencySelector.js";
-import "./files/currencySlider.js";
+
+// решили отключить прокрутку валют
+// import "./files/currencySlider.js";
+
 // script.js выдает ошибку и ламает функционал
 // import "./files/script.js";
 //============================================================================================================================================================================================================================================

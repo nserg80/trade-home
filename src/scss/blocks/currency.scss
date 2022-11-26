@@ -1,14 +1,14 @@
-.currency {
-    padding: 17px 0;
+.currency-wrap {
     background: rgba(255,255,255, 0.08);
     backdrop-filter: blur(5.5px);
-    // margin: -32px 0; - old style
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
-    overflow: hidden;
+}
+
+.currency {
     width: 100%;
-    max-width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 17px 0;
+    overflow: hidden;
 
     &__list {
         display: flex;
@@ -33,13 +33,27 @@
         margin-right: 10px;
     }
 
+    &__desc {
+        // overflow: hidden;
+    }
+
     &__title {
         color: #fff;
         margin-bottom: 3px;
+        display: block;
+        max-width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &__value {
         font-size: 18px;
         color: #FCD535;
+        display: block;
+        max-width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 }
