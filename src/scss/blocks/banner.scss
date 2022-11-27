@@ -39,6 +39,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      cursor: pointer;
    }
 
    &__video {
@@ -412,5 +413,24 @@
       display: block;
       color: #FCD535;
       margin: 0 0 3px;
+   }
+}
+
+.banner-video-popup {
+   .popup__content {
+      width: 75vw;
+      max-width: 75vw;
+      padding: 0;
+      background: none;
+
+      @media screen and (max-width: $tablet) {
+         width: 90vw;
+         max-width: 90vw;
+      }
+   }
+
+   .banner__video {
+      width: 100%;
+      height: auto;
    }
 }
