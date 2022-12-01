@@ -1,18 +1,8 @@
 .banner {
    @include adaptiveValue("padding-bottom", 73, 54);
    padding-top: rem(172);
-   background: url("@img/about/bg.svg") 0 0 / cover no-repeat;
+   background: url("@img/about/bg.webp") 0 0 / cover no-repeat;
    position: relative;
-
-   &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      backdrop-filter: blur(4px);
-   }
 
    // .banner__container
    &__container {
